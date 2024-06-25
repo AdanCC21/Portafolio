@@ -1,116 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Welcome</title>
+    <link rel="icon" type="image/png" href="assets/ajua.jpg">
 
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/Io gati.png">
 
-
-    <title>Portafolio</title>
 </head>
 <body>
-    <!-- Barra Superior -->
-    <section class="TopContainer">
-        <div class="TopItem">
-            <img src="assets/Io gati.png">
+    <div class="WelcomeSection">
+        <div class="WelcomeSectionItems">
+            <a href="#" id="Welcome"><strong>Welcome </strong></a>
+            <!-- <img src="assets/catsGif/happy-cat.gif"> -->
+            <!-- <a id="Welcome"><strong>Welcome</strong></a> -->
+            <!-- <img src="assets/catsGif/happy-cat.gif" style="width: 150px;"> -->
         </div>
-        <div class="TopItem">
-            <a class="TopText Text" href="https://www.instagram.com/adan_gcm" target="_blank">Instagram</a>
-            <a class="TopText Text" href="https://github.com/AdanCC21">Github</a>
-            
-        </div>
-        
-    </section>
+    </div>
 
-    <!-- Introduccion -->
-    <section class="IntroContainer">
-        <div class="IntroPictureContainer">
-            <img src="assets/ioIRL.png">
-        </div>
-
-        <div class="IntroItems Text">
-            <div class="IntroTitle">
-                Adan Gonzalez Ceseña
-            </div>
-            <div class="IntroItem">
-                Soy un estudiante universitario de UABC, estudiando la carrera de Ingeniero en Software y Tecnologías Emergentes,
-                en la actualidad he llevado a cabo varios proyectos universitarios, 
-                como por ejemplo, varios juegos hechos con Raylib, he simulado un sistema bancario en Python, 
-                un sistema que reconozca colores hecho con OpenCV, un Snake con listas enlazadas, etc.
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Informacion Academica -->
-    <section class="BasicContainer">
-        <div class="BasicTitle Text">Información Académica</div>
-        <div class="BasicItems Text">
-            <div class="BasicItem">Estudio en UABC, la carrera de Ingeniero en Software y Tecnologías Emergentes.
-                <img src="assets/uabc/UABC.png"> </div>
-            <div class="BasicItem">Se manejar C, C++ y Python.
-                <img src="assets/icons/lenguajes.png">
-            </div>
-            <div class="BasicItem">He aprendido HTML y CSS por mi propia cuenta.
-                <img src="assets/icons/htmll.png">
-            </div>
-        </div>
-    </section>
-
-    <!-- Softwares -->
-    <section class="JobContainer Text">
-        <div class="JobTitle">Software que manejo</div>
-        <div class="JobItems">
-            <div class="JobItem">VS Code <img src="assets/icons/VsCode.png"> </div>
-            <div class="JobItem">GitBash <img src="assets/icons/GitBash.png"> </div>
-            <div class="JobItem">GitHub Desktop <img src="assets/icons/GitHubDesktop.png"></div>
-            <div class="JobItem">Adobe Premiere <img src="assets/icons/Premiere.png"></div>
-            <div class="JobItem">Adobe Photoshop <img src="assets/icons/Photoshop.png"></div>
-        </div>
-    </section>
-
-    <!-- More About Me -->
-    <section class="BasicContainer">
-        <div class="BasicTitle Text">Más sobre mí</div>
-        <div class="BasicItems Text">
-            <div class="BasicItem">Trabajo de editor de videos desde 2021,
-                he editado videos para Youtube, TikTok, Reel, Shorts, Etc.
-                <img src="assets/Cats/mad-typing.gif"> </div>
-            <div class="BasicItem">Mi nivel de inglés lo calificaría con un 60% hablado, 50% lectura y escritura,
-                30% escuchado.
-                <img src="assets/Cats/ajua.jpg">
-            </div>
-            <div class="BasicItem">Me gusta tener proyectos donde se requiera creatividad
-                y poner mi propia huella.
-                <img src="assets/icons/GitHub.png">
-            </div>
-        </div>
-    </section>
-
-    <footer class="FotContainer">
-        <div class="FotItems Text">
-            <div class="FotItem">
-                Página hecha por
-                <a href="https://github.com/AdanCC21"target="_blank">- AdanCC21</a>
-            </div>
-            <div class="FotItem">
-                Información de Despliegue
-                <a href="https://pages.github.com/"target="_blank">- Github Pages</a>
-            </div>
-            <div class="FotItem">
-                Medio de Contacto
-                <a href="https://www.instagram.com/adan_gcm" target="_blank">- Instagram</a>
-                <a href="mailto:adan.cesena@uabc.edu.mx" target="_blank" >- Correo</a>
-                <a href="https://github.com/AdanCC21" target="_blank">- GitHub</a>
-            </div>
-        </div>
-    </footer>
-
+    <script src="01-User/01-BasicData.js"></script>
+    
+    <script>
+        document.getElementById("Welcome").addEventListener('click',function(){
+            window.location.href="inicio.html";
+        })
+    </script>
 </body>
 </html>

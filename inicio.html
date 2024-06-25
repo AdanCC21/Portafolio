@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- <div class="TopButton">
+        <img src="assets/Iconos/BarIcon.png">
+    </div> -->
+    <main class="MainSection">
+        <img src="assets/ioIRL.jpg">
+        <div class="MainSectionItems">
+            <h1>Adan Gonzalez Ceseña</h1>
+            <p>Ingeniero en software y tecnologías emergentes</p>
+        </div>
+    </main>
+
+    <button class="ButtonMain">
+        <a href="#" id="Proyectos">Proyectos</a>
+        <a href="#"id="Softwares">Softwares</a>
+        <a href="#"id="SobreMi">Sobre mi</a>
+    </button>
+
+    <script>
+        document.getElementById("Proyectos").addEventListener("click",function(){
+            window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("Softwares").addEventListener("click",function(){
+            window.location.href = "softwares.html"
+        })
+
+        document.getElementById("SobreMi").addEventListener("click",function(){
+            window.location.href="sobreMi.html"
+        })
+    </script>
+</body>
+</html>
