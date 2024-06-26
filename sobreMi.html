@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>SobreMi</title>
+    <link rel="icon" type="image/png" href="assets/Iconos/icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,13 @@
 
 </head>
 <body>
-    <div class="TopButton">
-        <img src="assets/Iconos/Back.png" id="AboutMeBack">
-    </div>
+    <div class="TopBar">
+        <div class="TopBarItems">
+            <img src="assets/Iconos/Folder.png" id="Proyectos">
+            <img src="assets/Iconos/laptop.png" id="Softwares"> 
+            <img src="assets/Iconos/Home.png" id="Home" >
+        </div>
+    </div> 
     <main class="AboutSection">
         <h1>Adan Gonzalez</h1>
         <img src="assets/ioSpidy.png">
@@ -50,8 +55,16 @@
     </div>
 
     <script>
-        document.getElementById("AboutMeBack").addEventListener("click",function(){
+        document.getElementById("Home").addEventListener("click",function(){
             window.location.href="inicio.html";
+        })
+
+        document.getElementById("Proyectos").addEventListener("click",function(){
+            window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("Softwares").addEventListener("click",function(){
+            window.location.href="softwares.html"
         })
     </script>
 </body>

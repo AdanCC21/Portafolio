@@ -11,11 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/Iconos/icon.png"
 </head>
 <body>
-    <div class="TopButton">
-        <img src="assets/Iconos/Back.png" id="ProjectBack">
-    </div>
+    <div class="TopBar">
+        <div class="TopBarItems">
+            <img src="assets/Iconos/Home.png" id="Home" >
+            <img src="assets/Iconos/laptop.png" id="Softwares">
+            <img src="assets/Iconos/Person.png" id="SobreMi"> 
+        </div>
+    </div> 
     <main class="ProjectSection">
         <div class="ProjectTitle">
             <h1>Proyectos</h1>
@@ -50,8 +55,16 @@
     </main>
 
     <script>
-        document.getElementById("ProjectBack").addEventListener("click",function(){
+        document.getElementById("Home").addEventListener("click",function(){
             window.location.href="inicio.html";
+        })
+
+        document.getElementById("Softwares").addEventListener("click",function(){
+            window.location.href = "softwares.html"
+        })
+
+        document.getElementById("SobreMi").addEventListener("click",function(){
+            window.location.href="sobreMi.html"
         })
     </script>
 </body>

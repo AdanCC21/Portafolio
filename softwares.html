@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Softwares</title>
+    <link rel="icon" type="image/png" href="assets/Iconos/icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,13 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="TopButton">
-        <img src="assets/Iconos/Back.png" id="SoftwareBack">
-    </div>
+    <div class="TopBar" >
+        <div class="TopBarItems">
+            <img src="assets/Iconos/Folder.png" id="Proyectos">
+            <img src="assets/Iconos/Home.png" id="Home" >
+            <img src="assets/Iconos/Person.png" id="SobreMi"> 
+        </div>
+    </div> 
 
     <main class="SoftwareSection">
         <h1 class="SoftwareTitle">Softwares que manejo</h1>
@@ -53,8 +58,16 @@
     </main>
 
     <script>
-        document.getElementById("SoftwareBack").addEventListener("click",function(){
+        document.getElementById("Home").addEventListener("click",function(){
             window.location.href="inicio.html";
+        })
+
+        document.getElementById("Proyectos").addEventListener("click",function(){
+            window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("SobreMi").addEventListener("click",function(){
+            window.location.href="sobreMi.html"
         })
     </script>
 </body>
