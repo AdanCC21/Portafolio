@@ -15,13 +15,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <!-- <div class="TopButton">
-        <img src="assets/Iconos/BarIcon.png">
-    </div> -->
     <div class="TopBar">
         <div class="TopBarItems">
             <img src="assets/Iconos/Folder.png" id="Proyectos" >
             <img src="assets/Iconos/laptop.png" id="Softwares">
+            <img src="assets/Iconos/lenguage.png" id="Lenguajes"> 
             <img src="assets/Iconos/Person.png" id="SobreMi"> 
         </div>
     </div> 
@@ -41,6 +39,10 @@
 
         document.getElementById("Softwares").addEventListener("click",function(){
             window.location.href = "softwares.html"
+        })
+
+        document.getElementById("Lenguajes").addEventListener("click",function(){
+            window.location.href="lenguajes.html"
         })
 
         document.getElementById("SobreMi").addEventListener("click",function(){

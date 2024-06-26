@@ -18,6 +18,7 @@
         <div class="TopBarItems">
             <img src="assets/Iconos/Folder.png" id="Proyectos">
             <img src="assets/Iconos/Home.png" id="Home" >
+            <img src="assets/Iconos/lenguage.png" id="Lenguajes"> 
             <img src="assets/Iconos/Person.png" id="SobreMi"> 
         </div>
     </div> 
@@ -37,7 +38,12 @@
             
             <div class="SoftwareItem">
                 <h1>Git</h1>
-                <img src="assets/Softwares/GitBash.png">
+                <img src="assets/Softwares/Git.png">
+            </div>
+            
+            <div class="SoftwareItem">
+                <h1>GitHub Desktop</h1>
+                <img src="assets/Softwares/GitHub.png">
             </div>
             
             <div class="SoftwareItem">
@@ -50,10 +56,6 @@
                 <img src="assets/Softwares/Photoshop.png">
             </div>
             
-            <div class="SoftwareItem">
-                <h1>GitHub Desktop</h1>
-                <img src="assets/Softwares/GitHub.png">
-            </div>
         </div>
     </main>
 
@@ -64,6 +66,10 @@
 
         document.getElementById("Proyectos").addEventListener("click",function(){
             window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("Lenguajes").addEventListener("click",function(){
+            window.location.href="lenguajes.html"
         })
 
         document.getElementById("SobreMi").addEventListener("click",function(){

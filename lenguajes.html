@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes</title>
+    <link rel="icon" type="image/png" href="assets/Iconos/icon.png">
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="TopBar">
+        <div class="TopBarItems">
+            <img src="assets/Iconos/Folder.png" id="Proyectos" >
+            <img src="assets/Iconos/laptop.png" id="Softwares">
+            <img src="assets/Iconos/Home.png" id="Home"> 
+            <img src="assets/Iconos/Person.png" id="SobreMi"> 
+        </div>
+    </div> 
+
+    <main>
+        <main class="LenguageSection">
+            <h1 class="LenguageTitle">Lenguajes y entornos que manejo</h1>
+            <div class="LenguageListItems">
+                <div class="LenguageItem">
+                    <h1>C</h1>
+                    <img src="assets/Lenguaje/c.png">
+                </div>
+    
+                <div class="LenguageItem">
+                    <h1>C++</h1>
+                    <img src="assets/Lenguaje/cpp.png">
+                </div>
+                
+                <div class="LenguageItem">
+                    <h1>Python</h1>
+                    <img src="assets/Lenguaje/python.png">
+                </div>
+                
+                <div class="LenguageItem">
+                    <h1>Html y Css</h1>
+                    <img src="assets/Lenguaje/htmlYcss.png">
+                </div>
+                
+                <div class="LenguageItem">
+                    <h1>Javascript</h1>
+                    <img src="assets/Lenguaje/javascript.png">
+                </div>
+                
+                <div class="LenguageItem">
+                    <h1>Raylib</h1>
+                    <img src="assets/Lenguaje/Raylib_logo.png">
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <script>
+        document.getElementById("Proyectos").addEventListener("click",function(){
+            window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("Softwares").addEventListener("click",function(){
+            window.location.href = "softwares.html"
+        })
+
+        document.getElementById("Home").addEventListener("click",function(){
+            window.location.href="inicio.html"
+        })
+
+        document.getElementById("SobreMi").addEventListener("click",function(){
+            window.location.href="sobreMi.html"
+        })
+    </script>
+</body>
+</html>

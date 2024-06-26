@@ -19,6 +19,7 @@
         <div class="TopBarItems">
             <img src="assets/Iconos/Folder.png" id="Proyectos">
             <img src="assets/Iconos/laptop.png" id="Softwares"> 
+            <img src="assets/Iconos/lenguage.png" id="Lenguajes"> 
             <img src="assets/Iconos/Home.png" id="Home" >
         </div>
     </div> 
@@ -29,9 +30,11 @@
     </main>
     
     <div class="AboutSection">
-        
-        <h1>¿Quién soy?</h1>
-        <p>
+        <div class="AboutWhoIAmTitle">
+            <h1>¿Quién soy?</h1>
+            <img src="assets/catsGif/ola.gif">
+        </div>
+        <p style="line-height: 2.1;">
             - Soy un estudiante de la UABC, actualmente estoy cursando una carrera de ingeniería
             en software y tecnologías emergentes. 
             <br><br>
@@ -41,6 +44,33 @@
             creatividad.
             <br><br>
             - Tengo 3 años de experiencia editando videos para streamers usando Premiere, Photoshop y Filmora.
+        </p>
+    </div>
+    
+    <div class="AboutSection">
+        <div class="AboutWhoIAmTitle">
+            <h1>Metas</h1>
+            <img src="assets/catsGif/husshere-herehuss.gif">
+        </div>
+        <p style="text-align:justify; line-height: 2.1;">
+            Como profesional aún no tengo claro en que quiero me quiero especializar,  
+            por ahora estoy probando un poco de todo para ver que me gusta, 
+            en general me gusta de todo, tengo que admitir que hacer este portafolio me a 
+            gustado desarrollarlo la verdad, y me gustaria aprender más sobre backend y fronted
+
+        </p>
+    </div>
+    
+    <div class="AboutSection">
+        <div class="AboutWhoIAmTitle">
+            <h1>Edición</h1>
+            <img src="assets/catsGif/writing.gif">
+        </div>
+        <p style="text-align:justify; line-height: 2.1;">
+            Durante 3 años he estado editando videos para varios streamers, 
+            ya sean videos de Youtube, TikToks o Reals, e editado directos 
+            de 10 horas, highlights, eventos, e incluso para mi universidad 
+            edite una parte de los videos que presentan las materias
         </p>
     </div>
     
@@ -61,6 +91,10 @@
 
         document.getElementById("Proyectos").addEventListener("click",function(){
             window.location.href = "proyectos.html"
+        })
+
+        document.getElementById("Lenguajes").addEventListener("click",function(){
+            window.location.href="lenguajes.html"
         })
 
         document.getElementById("Softwares").addEventListener("click",function(){
