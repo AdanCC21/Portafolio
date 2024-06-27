@@ -268,9 +268,12 @@ html{
     transition: all ease-in-out 0.5s;
 }
 
-.ProjectItem h1{
+.ProjectItem a{
+    color: white;
     font-size: 3rem;
     text-align: center;
+    text-decoration:none;
+    transition: all ease-in-out 0.5s;
 }
 
 .ProjectItem p{
@@ -287,11 +290,16 @@ html{
     
 }
 
+.ProjectListItems a:hover{
+    color: yellow;
+}
+
 .ProjectListItems div:hover p{
     display: block;
     height: auto;
     font-size: 2rem;
     opacity: 1;
+    
 }
 
 .ProjectItem img{
