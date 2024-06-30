@@ -17,9 +17,11 @@
     <div class="TopBar">
         <div class="TopBarItems">
             <img src="assets/Iconos/Home.png" id="Home" >
+            <img src="assets/Iconos/Folder.png" id="Proyectos" style="opacity: 50%;" >
             <img src="assets/Iconos/laptop.png" id="Softwares">
             <img src="assets/Iconos/lenguage.png" id="Lenguajes"> 
-            <img src="assets/Iconos/Person.png" id="SobreMi"> 
+            <img src="assets/Social/Ig.png" id="Instagram"  alt="Instagram"> 
+            <img src="assets/Social/GitHub2.png" id="Github" alt="Github"> 
         </div>
     </div> 
     <main class="ProjectSection">
@@ -68,9 +70,13 @@
             window.location.href="lenguajes.html"
         })
 
-        document.getElementById("SobreMi").addEventListener("click",function(){
-            window.location.href="sobreMi.html"
-        })
+        document.getElementById("Instagram").addEventListener('click', function() {
+            window.open('https://www.instagram.com/adan_gcm/?hl=es-la', '_blank');
+        });
+        
+        document.getElementById("Github").addEventListener('click', function() {
+            window.open('https://github.com/AdanCC21', '_blank');
+        });
     </script>
 </body>
 </html>
