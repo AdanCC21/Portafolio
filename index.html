@@ -29,8 +29,7 @@
             <img src="assets/Iconos/Folder.png" id="Proyectos" alt="Proyectos">
             <img src="assets/Iconos/laptop.png" id="Softwares" alt="Softwres">
             <img src="assets/Iconos/lenguage.png" id="Lenguajes" alt="Lenguajes"> 
-            <img src="assets/Social/Ig.png" id="Instagram"  alt="Instagram"> 
-            <img src="assets/Social/GitHub2.png" id="Github" alt="Github"> 
+            <img src="assets/Iconos/clapperboard.png" id="Clapperboard" alt="Edicion"> 
         </div>
     </div>
 
@@ -88,6 +87,12 @@
         <img src="assets/catsGif/husshere-herehuss.gif">
     </section>
 
+    <footer class="footerBase">
+        <h1>Created By Adan Gonzalez Ceseña</h1>
+        <img src="assets/Social/GitHub2.png" id="Github" alt="Github"> 
+        <img src="assets/Social/Ig.png" id="Instagram"  alt="Instagram"> 
+        <img src="assets/Social/Gmail.png" id="Gmail" alt="Gmail">
+    </footer>
     <script>
         document.getElementById("Proyectos").addEventListener("click",function(){
             window.location.href = "proyectos.html"
@@ -100,11 +105,12 @@
         document.getElementById("Lenguajes").addEventListener("click",function(){
             window.location.href="lenguajes.html"
         });
-
-        document.getElementById("Instagram").addEventListener('click', function() {
-            window.open('https://www.instagram.com/adan_gcm/?hl=es-la', '_blank');
-        });
         
+        document.getElementById("Clapperboard").addEventListener('click', function() {
+            window.location.href="edicion.html"
+        });
+
+        // REDES --------------------
         document.getElementById("Instagram").addEventListener('click', function() {
             window.open('https://www.instagram.com/adan_gcm/?hl=es-la', '_blank');
         });
@@ -113,10 +119,11 @@
             window.open('https://github.com/AdanCC21', '_blank');
         });
         
-        document.getElementById("Github").addEventListener('click', function() {
-            window.open('https://github.com/AdanCC21', '_blank');
+        document.getElementById("Gmail").addEventListener('click', function() {
+            window.location.href="mailto:adancorp.gemial@gmail.com"
         });
-
+        
+        // Movimiento --------------------
         document.getElementById('ArrowDown').addEventListener('click',function(){
             document.getElementById('WhoIAm').scrollIntoView({behavior:'smooth'});
         });

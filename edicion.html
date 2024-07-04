@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion</title>
+    <link rel="icon" type="image/png" href="assets/Iconos/icon.png">
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="edicion.css">
+</head>
+<body>
+    <div class="TopBar">
+        <div class="TopBarItems">
+            <img src="assets/Iconos/Home.png" id="Home" alt="Home"> 
+            <img src="assets/Iconos/Folder.png" id="Proyectos" alt="Proyectos">
+            <img src="assets/Iconos/laptop.png" id="Softwares" alt="Softwres">
+            <img src="assets/Iconos/lenguage.png" id="Lenguajes" alt="Lenguajes"> 
+            <img src="assets/Iconos/clapperboard.png" id="Clapperboard" alt="Edicion" style="opacity: 50%;"> 
+        </div>
+    </div>
+
+    <main class="editionSection">
+        <h1>Videos</h1>
+        <section>
+            <button id="prev">Prev</button>
+                <iframe id="VideoPlayer" src="https://www.youtube.com/embed/5EVhnUePLx0" frameborder="0" allowfullscreen></iframe>
+            <button id="next">Next</button>
+        </section>
+    </main>
+
+    <section class="editionChanels">
+        <h1>Mas canales que puedes ver</h1>
+        <section class="ChanlesImg">
+            <img src="assets/Streamers/FabiFace.jpg" id="FabiFace" alt="FabiFace">
+            <img src="assets/Streamers/Sky.jpg" id="Sky" alt="Sky">
+            <img src="assets/Streamers/CadeteMantequilla.jpg" id="CadeteMantequilla" alt="CadeteMantequilla">
+        </section>
+    </section>
+
+    <footer class="footerBase">
+        <h1>Created By Adan Gonzalez Ceseña</h1>
+        <img src="assets/Social/GitHub2.png" id="Github" alt="Github"> 
+        <img src="assets/Social/Ig.png" id="Instagram"  alt="Instagram"> 
+        <img src="assets/Social/Gmail.png" id="Gmail" alt="Gmail">
+    </footer>
+
+    <script>
+        document.getElementById("Home").addEventListener("click",function(){
+            window.location.href="index.html"
+        })
+
+        document.getElementById("Proyectos").addEventListener("click",function(){
+            window.location.href = "proyectos.html"
+        });
+
+        document.getElementById("Softwares").addEventListener("click",function(){
+            window.location.href = "softwares.html"
+        });
+
+        document.getElementById("Lenguajes").addEventListener("click",function(){
+            window.location.href="lenguajes.html"
+        });
+
+        // REDES --------------------
+        document.getElementById("Instagram").addEventListener('click', function() {
+            window.open('https://www.instagram.com/adan_gcm/?hl=es-la', '_blank');
+        });
+        
+        document.getElementById("Github").addEventListener('click', function() {
+            window.open('https://github.com/AdanCC21', '_blank');
+        });
+        
+        document.getElementById("Gmail").addEventListener('click', function() {
+            window.location.href="mailto:adancorp.gemial@gmail.com"
+        });
+        
+        // Streamers --------------
+        document.getElementById('FabiFace').addEventListener('click',function(){
+            window.open('https://www.youtube.com/channel/UC9Ts3CsScJRzlYV9AQrBh0Q','_blank');
+        });
+
+        document.getElementById('Sky').addEventListener('click',function(){
+            window.open('https://www.tiktok.com/@skyyugm?lang=es','_blank');
+        });
+
+        document.getElementById('CadeteMantequilla').addEventListener('click',function(){
+            window.open('https://www.tiktok.com/@cadete_mantequilla?lang=es','_blank');
+        })
+
+    </script>
+
+    <script>
+        // Videos
+        const videos = [
+            'https://www.youtube.com/embed/5EVhnUePLx0',  
+            'https://www.youtube.com/embed/fp2AbtziKpc',
+        ];
+
+        let NumVideos = 0;
+
+        const VideoSource = document.getElementById('VideoPlayer');
+
+        document.getElementById('prev').addEventListener('click',function(){
+            NumVideos--;
+            if(NumVideos <= 0){
+                NumVideos = videos.length;
+                NumVideos--;
+            }
+            console.log(NumVideos)
+            VideoSource.src=videos[NumVideos];
+        })
+
+        document.getElementById('next').addEventListener('click',function(){
+            NumVideos++
+            if(NumVideos >= videos.length){
+                NumVideos = 0;    
+            }
+            console.log(NumVideos)
+            VideoSource.src=videos[NumVideos];
+        })
+
+    </script>
+</body>
+</html>

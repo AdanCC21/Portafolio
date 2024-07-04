@@ -1,0 +1,123 @@
+.editionSection{
+    display: flex;
+    
+    flex-direction: column;
+
+    height: 90vh;
+    width: 99vw;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10vh;
+}
+
+.editionSection section{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 90%;
+}
+
+.editionSection h1{
+    color: rgb(255, 123, 0);
+}
+
+.editionSection section button{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    
+    font-size: 1rem;
+    
+    padding: 2%;
+    
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.editionSection iframe{
+    background-color: rgb(41, 41, 41);
+    
+    
+    height: 80%;
+    width: 80%;
+
+    border-radius: 12px;
+    
+    padding: 1%;
+}
+
+.editionChanels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.editionChanels h1{
+    color: rgb(255, 123, 0);
+}
+
+.editionChanels section{
+    display: flex;
+    
+    background-color: rgb(41, 41, 41);
+    padding: 1%;
+    border-radius: 12px;
+    
+    max-width: 80%;
+    justify-content: space-around;
+}
+
+.ChanlesImg{
+    align-items: center;
+}
+
+.ChanlesImg img{
+    width: 20%;
+    height: 20%;
+    
+    border-radius: 12px;
+    padding: 1%;
+    
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+
+.ChanlesImg img:hover{
+    width: 35%;    
+}
+
+/* Celular */
+@media (width < 767px){
+    .editionSection{
+        height: 70vh;
+    }
+    
+    .editionSection h1{
+        font-size: 5rem;
+    }
+
+    .editionSection section{
+        flex-direction: column;
+    }
+
+    .editionSection section button{
+        font-size: 4rem;
+    }
+    .editionSection iframe{
+        height: 40%;
+        width: 80%;
+    }
+
+    .editionChanels h1{
+        font-size: 2.5rem;
+    }
+    .editionChanels {
+        margin-bottom: 10%;
+    }
+}
