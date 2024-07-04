@@ -75,8 +75,6 @@ html{
     cursor: pointer;
 }
 
-
-/* Media query para pantallas medianas (tabletas) */
 @media (min-width: 600px) {
     .MainSection img {
         max-width: 75vw; /* Ajusta el tamaño para tabletas */
@@ -649,8 +647,6 @@ html{
     border-radius: 12px;
     transition: all ease-in-out 0.5s;
 }
-
-
 
 /* Celular */
 @media (max-width: 767px){
