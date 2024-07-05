@@ -26,23 +26,25 @@
         </div>
     </div>
 
-    <main class="editionSection">
-        <h1>Videos</h1>
-        <section>
-            <button id="prev">Prev</button>
-                <iframe id="VideoPlayer" src="https://www.youtube.com/embed/5EVhnUePLx0" frameborder="0" allowfullscreen></iframe>
-            <button id="next">Next</button>
-        </section>
-    </main>
-
     <section class="editionChanels">
-        <h1>Mas canales que puedes ver</h1>
+        <h1>Canales en donde edito</h1>
         <section class="ChanlesImg">
             <img src="assets/Streamers/FabiFace.jpg" id="FabiFace" alt="FabiFace">
             <img src="assets/Streamers/Sky.jpg" id="Sky" alt="Sky">
             <img src="assets/Streamers/CadeteMantequilla.jpg" id="CadeteMantequilla" alt="CadeteMantequilla">
         </section>
     </section>
+
+    <main class="editionSection">
+        <h1>Videos de ejemplo</h1>
+        <section>
+            <img id="prev" src="assets/Iconos/Left.png">
+                <iframe id="VideoPlayer" src="https://www.youtube.com/embed/5EVhnUePLx0" frameborder="0" allowfullscreen></iframe>
+            <img id="next" src="assets/Iconos/Right.png">
+        </section>
+    </main>
+
+    
 
     <footer class="footerBase">
         <h1>Created By Adan Gonzalez Ceseña</h1>
@@ -101,6 +103,7 @@
         const videos = [
             'https://www.youtube.com/embed/5EVhnUePLx0',  
             'https://www.youtube.com/embed/fp2AbtziKpc',
+            'https://www.youtube.com/embed/9HEGNLexJgc',
         ];
 
         let NumVideos = 0;
@@ -109,9 +112,9 @@
 
         document.getElementById('prev').addEventListener('click',function(){
             NumVideos--;
-            if(NumVideos <= 0){
+            if(NumVideos < 0){
                 NumVideos = videos.length;
-                NumVideos--;
+                NumVideos--
             }
             console.log(NumVideos)
             VideoSource.src=videos[NumVideos];

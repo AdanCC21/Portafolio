@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
 
-    padding-top: 10vh;
 }
 
 .editionSection section{
@@ -22,19 +21,13 @@
 }
 
 .editionSection h1{
-    color: rgb(255, 123, 0);
+    
+    font-size: 2rem;
+    text-align: center;
 }
 
-.editionSection section button{
-    background-color: rgb(41, 41, 41);
-    color: white;
-    
-    font-size: 1rem;
-    
-    padding: 2%;
-    
-    border: none;
-    border-radius: 12px;
+.editionSection section img{
+    width: 2%;
     cursor: pointer;
 }
 
@@ -53,13 +46,18 @@
 .editionChanels{
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
+    
     margin-bottom: 5%;
+    padding-top: 13vh;
 }
 
 .editionChanels h1{
-    color: rgb(255, 123, 0);
+    
+    font-size: 4rem;
+    text-align: center
 }
 
 .editionChanels section{
@@ -88,10 +86,6 @@
     cursor: pointer;
 }
 
-.ChanlesImg img:hover{
-    width: 35%;    
-}
-
 /* Celular */
 @media (width < 767px){
     .editionSection{
@@ -106,8 +100,8 @@
         flex-direction: column;
     }
 
-    .editionSection section button{
-        font-size: 4rem;
+    .editionSection section img{
+        width: 5%;
     }
     .editionSection iframe{
         height: 40%;
@@ -119,5 +113,12 @@
     }
     .editionChanels {
         margin-bottom: 10%;
+    }
+}
+
+/* Animaciones en pc */
+@media (width > 768px){
+    .ChanlesImg img:hover{
+        width: 35%;    
     }
 }
