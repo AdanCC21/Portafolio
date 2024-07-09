@@ -27,15 +27,24 @@
     </div>
 
     <section class="editionChanels">
-        <h1>Canales en donde edito</h1>
+        <h1>Mi estilo</h1>
+        <p>
+            Mi estilo original es una edición movida, sin tantas pausas entre diálogos y con varias imágenes en pantalla, 
+            intentó retener el público lo máximo posible con memes y sonidos
+        </p>
+        
+        <p>
+            Aquí hay algunos canales en donde edito o llegue a editar
+        </p>
         <section class="ChanlesImg">
             <img src="assets/Streamers/FabiFace.jpg" id="FabiFace" alt="FabiFace">
             <img src="assets/Streamers/Sky.jpg" id="Sky" alt="Sky">
             <img src="assets/Streamers/CadeteMantequilla.jpg" id="CadeteMantequilla" alt="CadeteMantequilla">
         </section>
+        <img id="ArrowDown" src="assets/Iconos/Down.png" width="20px" class="MainArrowDown" alt="Bajar">
     </section>
 
-    <main class="editionSection">
+    <main class="editionSection" id="Examples">
         <h1>Videos de ejemplo</h1>
         <section>
             <img id="prev" src="assets/Iconos/Left.png">
@@ -95,6 +104,10 @@
         document.getElementById('CadeteMantequilla').addEventListener('click',function(){
             window.open('https://www.tiktok.com/@cadete_mantequilla?lang=es','_blank');
         })
+
+        document.getElementById('ArrowDown').addEventListener('click',function(){
+            document.getElementById('Examples').scrollIntoView({behavior:'smooth'});
+        });
 
     </script>
 

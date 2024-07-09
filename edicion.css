@@ -3,7 +3,7 @@
     
     flex-direction: column;
 
-    height: 90vh;
+    height: 100vh;
     width: 99vw;
     
     justify-content: center;
@@ -16,14 +16,16 @@
 
     align-items: center;
     justify-content: space-around;
-    height: 90%;
-    width: 90%;
+    
+    height: 80%;
+    width: 80%;
 }
 
 .editionSection h1{
-    
+    color: rgb(255, 123, 0);
     font-size: 2rem;
     text-align: center;
+    margin: 0;
 }
 
 .editionSection section img{
@@ -50,36 +52,44 @@
     justify-content: center;
     align-items: center;
     
-    margin-bottom: 5%;
-    padding-top: 13vh;
+    height: 100vh;
+    width: 99vw;
+    
 }
 
 .editionChanels h1{
-    
+    color: rgb(255, 123, 0);
     font-size: 4rem;
-    text-align: center
+    text-align: center;
+    margin-bottom: 1%;
 }
 
-.editionChanels section{
-    display: flex;
-    
-    background-color: rgb(41, 41, 41);
-    padding: 1%;
-    border-radius: 12px;
-    
+.editionChanels p{
     max-width: 80%;
-    justify-content: space-around;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .ChanlesImg{
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    
+    padding: 1%;
+    border-radius: 12px;
+    
+    justify-content: space-around;
     align-items: center;
+    
+    width: 40%;
+    height: auto;
+
 }
 
 .ChanlesImg img{
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: auto;
     
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 1%;
     
     transition: all ease-in-out .5s;
@@ -93,11 +103,8 @@
     }
     
     .editionSection h1{
-        font-size: 5rem;
-    }
-
-    .editionSection section{
-        flex-direction: column;
+        font-size: 4rem;
+        max-width: 80%;
     }
 
     .editionSection section img{
@@ -109,8 +116,26 @@
     }
 
     .editionChanels h1{
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
+
+    .editionChanels p{
+        font-size: 2rem;
+    }
+
+    .editionChanels :nth-child(3){
+        font-size: 1.5rem;
+    }
+
+    .ChanlesImg {
+        padding: 2%;
+        width: 70%;
+    }
+
+    .ChanlesImg img{
+        width: 30%;
+    }
+
     .editionChanels {
         margin-bottom: 10%;
     }
@@ -118,6 +143,7 @@
 /* Animaciones en pc */
 @media (width > 768px){
     .ChanlesImg img:hover{
-        width: 35%;    
+        width: 25%;    
+        height: auto;
     }
 }
