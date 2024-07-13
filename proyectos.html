@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Proyectos</title>
+    <title>Edicion</title>
     <link rel="icon" type="image/png" href="assets/Iconos/icon.png">
 
+    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
+    <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="proyectos.css">
+</head>
 </head>
 <body>
+
     <div class="TopBar">
         <div class="TopBarItems">
             <img src="assets/Iconos/Home.png" id="Home" >
@@ -23,45 +27,78 @@
             <img src="assets/Iconos/clapperboard.png" id="Clapperboard" alt="Edicion"> 
         </div>
     </div> 
-    <main class="ProjectSection">
-        <div class="ProjectTitle">
-            <h1>Proyectos</h1>
-            <h2>hechos o por hacer</h2>
-        </div>
-        
-        <div class="ProjectListItems">
-            <div class="ProjectItem">
-                <a href="https://github.com/tessarivas/PetCare" target="_blank"><strong>PetCare</strong></a>
-                <p>Una app para el cuidado de mascotas</p>
-                <img src="assets/projects/PetCare_LOGO.png">
-            </div>
 
-            <div class="ProjectItem">
-                <a href="https://github.com/Anrago/POOyecto" target="_blank"><strong>Pooyecto</strong></a>
-                <p>El juego de serpientes y escaleras próximamente online</p>
-                <img src="assets/projects/Pooyecto.jpeg">
-            </div>
-            
-            <div class="ProjectItem">
-                <a href="https://github.com/Scalaptia/16-Bits-de-Historia" target="_blank"><strong>16 bits de historia</strong></a>
-                <p>Un juego que relata historias icónicas del pais de mexico</p>
-                <img src="assets/projects/16BitsDeHistoriaLogo.png">
-            </div>
-            
-            <div class="ProjectItem">
-                <a><strong>Bin</strong></a>
-                <p>Un programa que almacena contraseñas que el usuario desee agregar</p>
-                <img src="assets/projects/BinLogo.jpeg">
-            </div>
+    <main class="projectSection">
+        <h1>Proyectos</h1>
+        <div>
+            <section class="currentProject" id="currentSection">
+                <img id="currentImage" src="assets/projects/Pooyecto.jpeg" alt="currentProject">
+                <h1 id="currentTitle">Pooyecto</h1>
+                <p id="currentDescription">El juego de serpientes y escaleras, usando el paradigma de POO, hecho en cpp, y raylib</p>
+            </section>
+            <section class="projects">
+                <section id="pooyecto">
+                    <img src="assets/projects/Pooyecto.jpeg">
+                    <h1>Pooyecto</h1>
+                </section>
+                <section id="petcare">
+                    <img src="assets/projects/PetCare_LOGO.png">
+                    <h1>Petcare</h1>
+                </section>
+                <section id="16Bits">
+                    <img src="assets/projects/16BitsDeHistoriaLogo.png">
+                    <h1>16 bits de historia</h1>
+                </section>
+                <section id="bin">
+                    <img src="assets/projects/BinLogo.jpeg">
+                    <h1>Bin</h1>
+                </section>
+            </section>
         </div>
     </main>
 
-    <footer class="footerBase">
-        <h1>Created By Adan Gonzalez Ceseña</h1>
-        <img src="assets/Social/GitHub2.png" id="Github" alt="Github"> 
-        <img src="assets/Social/Ig.png" id="Instagram"  alt="Instagram"> 
-        <img src="assets/Social/Gmail.png" id="Gmail" alt="Gmail">
-    </footer>
+
+    <script>
+        document.getElementById("pooyecto").addEventListener("click",function(){
+            let current = document.getElementById('currentImage');
+            const title = document.getElementById('currentTitle');
+            const description = document.getElementById('currentDescription');
+            
+            current.src = 'assets/projects/Pooyecto.jpeg'
+            title.textContent = "Pooyecto"
+            description.textContent = "El juego de serpientes y escaleras, usando el paradigma de POO, hecho en cpp, y raylib"
+        })
+        
+        document.getElementById("petcare").addEventListener("click",function(){
+            let current = document.getElementById('currentImage');
+            const title = document.getElementById('currentTitle');
+            const description = document.getElementById('currentDescription');
+            
+            current.src = 'assets/projects/PetCare_LOGO.png'
+            title.textContent = "PetCare"
+            description.textContent = "Una app para el cuidado de mascotas, pensada para celulares moviles, prototipo para pc"
+        })
+        
+        document.getElementById("bin").addEventListener("click",function(){
+            let current = document.getElementById('currentImage');
+            const title = document.getElementById('currentTitle');
+            const description = document.getElementById('currentDescription');
+            
+            current.src = 'assets/projects/BinLogo.jpeg'
+            title.textContent = "Bin"
+            description.textContent = "Una app para guardar contraseñas en archivos .dll, proyecto personal de vacaciones"
+        })
+        
+        document.getElementById("16Bits").addEventListener("click",function(){
+            let current = document.getElementById('currentImage');
+            const title = document.getElementById('currentTitle');
+            const description = document.getElementById('currentDescription');
+            
+            current.src = 'assets/projects/16BitsDeHistoriaLogo.png'
+            title.textContent = "16 bits de historia"
+            description.textContent = "Un juego que relata historias icónicas del pais de mexico, hecho en c y raylib"
+        })
+    </script>
 
     <script>
         document.getElementById("Home").addEventListener("click",function(){
@@ -93,5 +130,6 @@
             window.location.href="mailto:adancorp.gemial@gmail.com"
         });
     </script>
+
 </body>
 </html>
