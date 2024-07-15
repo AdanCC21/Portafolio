@@ -1,0 +1,90 @@
+/* ------------------------------ Software Section ------------------------------*/
+
+.SoftwareSection{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 99vw;
+    height: 100vh;
+}
+
+.SoftwareTitle{
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+.SoftwareListItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    /* border: 3px rgba(255, 255, 255, 0.219) solid; */
+
+    max-width: 85vw;
+}
+
+.SoftwareItem{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 40vh;
+    
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.SoftwareListItems div:hover{
+    width: 50%;
+
+}
+
+.SoftwareItem img{
+    margin: auto;
+    width: 60%;
+    border-radius: 12px;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Celular */
+@media (max-width: 767px){
+    .SoftwareSection{
+        height: 100%;
+    }
+
+    .SoftwareTitle{
+        margin: 30% 0 10% 0;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 80%;
+    }
+    
+    .SoftwareListItems{
+        flex-wrap: wrap;
+        max-width: 90vw;
+        justify-content: center;
+    }
+
+    .SoftwareItem{
+        font-size: 1.8rem;
+        text-align: center;
+
+        width: auto;
+        height: auto;
+
+        border-radius: 12px;
+        margin: 5% 0;
+        
+        max-width: 50%;
+    }
+
+    .SoftwareItem img{
+        width: 20%;
+    }
+}

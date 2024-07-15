@@ -1,0 +1,98 @@
+/* ------------------------------ Lenguages Section ------------------------------*/
+
+.LenguageSection{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 99vw;
+    height: 100vh;
+}
+
+.LenguageTitle{
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+.LenguageListItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    
+
+    max-width: 85vw;
+    
+}
+
+.LenguageItem{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 40vh;
+    
+    padding: 20px;
+    
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.LenguageListItems div:hover{
+    width: 50%;
+    background-color: rgb(24, 24, 24);
+    border-radius: 12px;
+    height: auto;
+}
+
+.LenguageItem img{
+    margin: auto;
+    max-width: 60%;
+    border-radius: 12px;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Celular */
+@media (max-width: 767px){
+    .LenguageSection{
+        height: 100%;
+    }
+
+    .LenguageTitle{
+        margin: 40% 0 10% 0;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 80%;
+    }
+    
+    .LenguageListItems{
+        flex-wrap: wrap;
+        max-width: 90vw;
+        justify-content: center;
+    }
+
+    .LenguageItem{
+        font-size: 1.8rem;
+        text-align: center;
+        
+        background-color: rgb(24, 24, 24);
+
+        width: auto;
+        height: auto;
+
+        border-radius: 12px;
+        margin: 5% 0;
+        
+        max-width: 50%;
+    }
+
+    .LenguageItem h1{
+        margin: 0 0 10% 0;
+    }
+
+    .LenguageItem img{
+        width: 40%;
+    }
+}
