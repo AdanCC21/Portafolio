@@ -115,6 +115,10 @@
         width: 80%;
     }
 
+    .editionChanels{
+        max-width: 98vw;
+    }
+
     .editionChanels h1{
         font-size: 5rem;
     }
@@ -129,17 +133,36 @@
 
     .ChanlesImg {
         padding: 2%;
-        width: 70%;
+        width: 60%;
     }
 
     .ChanlesImg img{
-        width: 30%;
+        width: 20%;
     }
 
     .editionChanels {
         margin-bottom: 10%;
     }
 }
+
+/* Celular Horizontal */
+@media (height < 500px){
+    .editionChanels{
+        max-width: 95vw;
+    }
+    .editionChanels h1{
+        font-size: 2rem;
+    }
+
+    .editionChanels p{
+        font-size: 1rem;
+    }
+    .editionSection h1{
+        font-size: 2rem;
+    }
+
+}
+
 /* Animaciones en pc */
 @media (width > 768px){
     .ChanlesImg img:hover{
