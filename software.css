@@ -8,23 +8,24 @@
     align-items: center;
 
     width: 99vw;
-    height: 100vh;
+    height: auto;
 }
 
 .SoftwareTitle{
     font-size: 3rem;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .SoftwareListItems{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
-    justify-content: space-between;
-    /* border: 3px rgba(255, 255, 255, 0.219) solid; */
+    justify-content: space-around;
 
     max-width: 85vw;
+    height: auto;
 }
 
 .SoftwareItem{
@@ -35,19 +36,22 @@
     
     background-color: rgb(24, 24, 24);
     padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 12px;
     
     align-items: center;
     transition: all ease-in-out 0.5s;
 }
 
 .SoftwareListItems div:hover{
-    width: 50%;
+    box-shadow:  4px 4px rgb(255, 123, 0);
 
 }
 
 .SoftwareItem img{
     margin: auto;
-    width: 60%;
+    width: 40%;
     border-radius: 12px;
     transition: all ease-in-out 0.5s;
 }
