@@ -14,7 +14,7 @@
 .SoftwareTitle{
     font-size: 3rem;
     margin-bottom: 5%;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .SoftwareListItems{
@@ -24,15 +24,17 @@
     
     justify-content: space-around;
 
-    max-width: 85vw;
+    max-width: 80vw;
     height: auto;
+
+    margin-bottom: 3%;
 }
 
 .SoftwareItem{
     display: flex;
     flex-direction: column;
     width: 20%;
-    height: 40vh;
+    height: auto;
     
     background-color: rgb(24, 24, 24);
     padding: 20px;
@@ -44,16 +46,21 @@
     transition: all ease-in-out 0.5s;
 }
 
-.SoftwareListItems div:hover{
-    box-shadow:  4px 4px rgb(255, 123, 0);
-
-}
+/* .SoftwareListItems div:hover img{
+    filter: drop-shadow(5px 2px 1px rgb(255, 123, 0));
+} */
 
 .SoftwareItem img{
     margin: auto;
     width: 40%;
     border-radius: 12px;
     transition: all ease-in-out 0.5s;
+}
+
+@media (min-width: 768px){
+    .SoftwareListItems div:hover img{
+        filter: drop-shadow(5px 2px 1px rgb(255, 123, 0));
+    }
 }
 
 /* Celular */
