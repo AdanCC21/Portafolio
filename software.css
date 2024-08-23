@@ -19,6 +19,7 @@
 
 .SoftwareListItems{
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     
@@ -46,20 +47,31 @@
     transition: all ease-in-out 0.5s;
 }
 
-/* .SoftwareListItems div:hover img{
-    filter: drop-shadow(5px 2px 1px rgb(255, 123, 0));
-} */
 
 .SoftwareItem img{
+    z-index: 2;
     margin: auto;
-    width: 40%;
+    width: 50%;
     border-radius: 12px;
-    transition: all ease-in-out 0.5s;
+    transform: translate(0,-30%);
+    transition: all ease-in-out 0.4s;
 }
 
 @media (min-width: 768px){
+    .SoftwareItem h1{
+        z-index: 1;
+        transform: translate(0,100%);    
+        cursor: default;
+        opacity: 0;
+        transition: all ease-in-out 0.4s;
+    }
+    .SoftwareListItems div:hover h1{
+        display: block;
+        opacity: 100;
+        transform: translate(0,0%);
+    }
     .SoftwareListItems div:hover img{
-        filter: drop-shadow(5px 2px 1px rgb(255, 123, 0));
+        transform: translate(0,0%);
     }
 }
 
@@ -68,6 +80,8 @@
     .SoftwareSection{
         height: 100%;
     }
+
+    
 
     .SoftwareTitle{
         margin: 30% 0 10% 0;
